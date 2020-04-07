@@ -1,0 +1,20 @@
+{
+  "name": "quickapi",
+  "description": "teste api direto no navegador de maneira rápida e simples",
+  "version": "0.9.0",
+  "main": "server.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "scripts": {
+  	"dev": "nodemon app.js",
+    "go": "node server.js"
+  },
+  "repository": {
+    "url": "https://exemplo.com/seu-usuario/meu-novo-projeto",
+    "type": "git"
+  },
+  "author": "Seu Nome <voce@exemplo.com.br>",
+  "license": "MIT"
+}

@@ -1,0 +1,106 @@
+.request {
+	border-right: 1px solid #161321;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+
+#url {
+	height: 35px;
+	margin: 10px;
+	background-color: #161321;
+	color: #1bc8e3;
+	border: none;
+	padding: 3px;
+}
+
+#options {
+	display: flex;
+	height: 35px;
+	border: none;
+	align-items: center;
+}
+
+#method {
+	width: 20%;
+	height: 30px;
+	margin: 0px 10px;
+	background-color: #161321;
+	color: #1bc8e3;
+	border: none;
+}
+
+#btn-send {
+	border: 1px solid #1bc8e3;
+	background-color: transparent;
+	color: #1bc8e3;
+	cursor: pointer;
+	height: 30px;
+	width: 100px
+}
+
+option {
+	outline: none
+}
+
+/* response-area */
+
+#response-area {
+	height: 100%;
+	margin: 10px
+}
+
+#response-type {
+	height: 30px;
+	margin: 0px 0px 10px 0px
+}
+
+.response-type-button {
+	color: #1bc8e3;
+	background-color: transparent;
+	border: 1px solid #1bc8e3;
+	height: 100%;
+	padding: 5px;
+	cursor: pointer;
+	width: 80px
+}
+
+.response-type-button:hover {
+	color: #fff;
+	background-color: #1bc8e3;
+	border: 1px solid #1bc8e3;
+	height: 100%;
+	padding: 5px;
+	cursor: pointer;
+	width: 80px
+}
+
+.response-type-button-active {
+	color: #fff;
+	background-color: #1bc8e3;
+	border: 1px solid #1bc8e3;
+	height: 100%;
+	padding: 5px;
+	cursor: pointer;
+	width: 80px
+}
+
+.response-type-button-active:hover {
+	color: #1bc8e3;
+	background-color: transparent;
+	border: 1px solid #1bc8e3;
+	height: 100%;
+	padding: 5px;
+	cursor: pointer;
+	width: 80px
+}
+
+#body-area {
+	width: 100%;
+	height: 100%;
+	background-color: #161321;
+	border: none;
+	color: #1bc8e3;
+}
