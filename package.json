@@ -1,7 +1,7 @@
 {
   "name": "quickapi-server",
   "description": "quick test rest API right in the browser",
-  "version": "0.9.0",
+  "version": "0.9.11",
   "main": "main.js",
   "license": "MIT",
   "homepage": "https://github.com/juniorgomesdev/quickapi",
