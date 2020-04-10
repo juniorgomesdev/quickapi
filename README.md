@@ -4,6 +4,7 @@
 
 ```js
 const quickapi = require('quickapi')
+
+// a message will be displayed on the console
 ```
 
-> a message will be displayed on the console
