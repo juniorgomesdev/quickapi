@@ -1,12 +1,12 @@
 {
   "name": "quickapi-server",
   "description": "quick test rest API right in the browser",
-  "version": "0.9.11",
+  "version": "0.9.12",
   "main": "main.js",
   "license": "MIT",
   "homepage": "https://github.com/juniorgomesdev/quickapi",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.1"
   },
   "scripts": {
     "dev": "nodemon app.js",
@@ -16,6 +16,5 @@
     "url": "https://github.com/juniorgomesdev/quickapi",
     "type": "git"
   },
-  "author": "Júnior Gomes <jrgomesdev@gmail.com>",
-  "bin": "./main.js"
+  "author": "Júnior Gomes <jrgomesdev@gmail.com>"
 }

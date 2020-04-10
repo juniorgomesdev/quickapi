@@ -14,39 +14,33 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: canceled
-      at Interface.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:136987:13)
-      at Interface.emit (events.js:189:13)
-      at Interface._ttyWrite (readline.js:783:16)
-      at ReadStream.onkeypress (readline.js:168:10)
-      at ReadStream.emit (events.js:189:13)
-      at emitKeys (internal/readline.js:424:14)
-      at emitKeys.next (<anonymous>)
-      at ReadStream.onData (readline.js:1022:36)
-      at ReadStream.emit (events.js:189:13)
-      at addChunk (_stream_readable.js:284:12)
+  SyntaxError: C:\Users\Junior\Dev\quickapi\package.json: Unexpected token } in JSON at position 264
+      at JSON.parse (<anonymous>)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Program Files (x86)\Yarn\lib\cli.js:310:30)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:321:13
 
 npm manifest: 
   {
-    "name": "quickapi-core",
+    "name": "quickapi-server",
     "description": "quick test rest API right in the browser",
-    "version": "0.9.0",
-    "main": "server.js",
+    "version": "0.9.11",
+    "main": "main.js",
     "license": "MIT",
     "homepage": "https://github.com/juniorgomesdev/quickapi",
     "dependencies": {
-      "express": "^4.17.1"
+      "express": "^4.17.1",
     },
     "scripts": {
-    	"dev": "nodemon app.js",
-      "go": "node server.js"
+      "dev": "nodemon app.js",
+      "start": "node server.js"
     },
     "repository": {
       "url": "https://github.com/juniorgomesdev/quickapi",
       "type": "git"
     },
-    "author": "Júnior Gomes <jrgomesdev@gmail.com>",
-    "license": "MIT"
+    "author": "Júnior Gomes <jrgomesdev@gmail.com>"
   }
 
 yarn manifest: 
@@ -329,6 +323,13 @@ Lockfile:
     version "6.7.0"
     resolved "https://registry.yarnpkg.com/qs/-/qs-6.7.0.tgz#41dc1a015e3d581f1621776be31afb2876a9b1bc"
     integrity sha512-VCdBRNFTX1fyE7Nb6FYoURo/SPe62QCaAyzJvUjwRaIsc+NePBEniHlvxFmmX56+HZphIGtV0XeCirBtpDrTyQ==
+  
+  quickapi-server@^0.9.0:
+    version "0.9.0"
+    resolved "https://registry.yarnpkg.com/quickapi-server/-/quickapi-server-0.9.0.tgz#750cda7c4f54ac95ff7ce376b8076e995928d993"
+    integrity sha512-PP0B2VODSDypAqooDX2tWlhBQYRlITh/FFlrerA6drUe4l44yh8bmz2bn07I9ivmANeCtYOlqUhX9W1lAlyGwQ==
+    dependencies:
+      express "^4.17.1"
   
   range-parser@~1.2.1:
     version "1.2.1"

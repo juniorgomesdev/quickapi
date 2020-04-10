@@ -1,5 +1,6 @@
 module.exports = function quickApi() {
-	const app = require('express')()
+	const express = require('express')
+	const app = express()
 
 	app.use('/public', express.static(__dirname + '/views'))
 	const dir = __dirname + '/views'
