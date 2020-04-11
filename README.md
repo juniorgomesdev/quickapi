@@ -3,7 +3,7 @@
 # init
 
 ```js
-const quickapi = require('quickapi')
+const quickapi = require('quickapi-server')()
 
 // a message will be displayed on the console
 ```
