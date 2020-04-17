@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
 	<title>apifast</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<link rel="stylesheet" type="text/css" href="public/css/all.css">
   <link rel="stylesheet" type="text/css" href="public/css/request.css">
   <link rel="stylesheet" type="text/css" href="public/css/response.css">
 </head>
 <body>
   <div id="app">
+    <!-- 
     <div id="routes" style="display: none">
       <button type="">create +</button>
       <div class="route-item">register</div>
       <div class="route-item">login</div>
       <div class="route-item">delete</div>
-    </div>
+    </div> -->
 
     <!-- request -->
 
-  	<div class="request">
+  	<div id="request">
   	  <input type="text" id="url" placeholder="http://" value="http://">
 
-  	  <div id="options">
+  	  <div id="request-type">
   	  	<select name="method" id="method">
   	  	  <option value="GET">GET</option>
   	  	  <option value="POST">POST</option>
@@ -30,17 +34,14 @@
 
   	    <button id="btn-send">send</button>
   	  </div>
-
-  	  <div id="response-area">
-       <div id="response-type">
-         <button class="response-type-button-active">body</button>
-         <button class="response-type-button">headers</button>
-         <button class="response-type-button">mode</button>
-         <button class="response-type-button">cache</button>
-       </div>
-       <textarea id="body-area" name=body cols="30" rows="10"></textarea> 
+      <div id="request-options">
+         <button class="request-type-button-active">body</button>
+         <button class="request-type-button">headers</button>
       </div>
 
+      <div id="result-request-options">
+        <textarea id="body-area" name=body cols="30" rows="10"></textarea>
+      </div>
   	</div>
 
     <!-- response -->
@@ -49,13 +50,11 @@
   	<div id="response">
   	  <div id="topbar">
   	  	<div class="slot-1">
-  	  	  <h3 id="status">status: 200</h3>
+  	  	  <h3 id="status-code">status: 200</h3>
   	  	</div>
         <div class="slot-2">
-          <h3 id="situation">sending</h3>
+          <h3 id="state">sending</h3>
         </div>
-
-        <h5 id="state">stop</h5>
   	  </div>
       <textarea id="res" readonly>
 
@@ -64,8 +63,8 @@
   </div>
 
   <script type="module" src="/public/js/quickapi/api.js"></script>
-  <script type="module" src="/public/js/quickapi/main.js"></script>
   <script type="module" src="/public/js/browser.js"></script>
   <script type="module" src="/public/js/render.js"></script>
+  <script type="module" src="/public/js/modules/decamelize.js"></script>
 </body>
 </html>

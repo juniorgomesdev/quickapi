@@ -1,10 +1,10 @@
-.request {
+#request {
 	border-right: 1px solid #161321;
 	width: 100%;
 	height: 100%;
 	display: flex;
 	justify-content: flex-start;
-	flex-direction: column;
+	flex-direction: column
 }
 
 #url {
@@ -45,59 +45,64 @@ option {
 	outline: none
 }
 
-/* response-area */
+#request-type {
+	height: 30px;
+	margin: 0px 0px 5px 0px
+}
 
-#response-area {
+#request-options {
+	margin: 10px
+}
+
+/* btn request options */
+.request-type-button {
+	color: #1bc8e3;
+	background-color: transparent;
+	border: 1px solid #1bc8e3;
+	height: 100%;
+	padding: 5px;
+	cursor: pointer;
+	width: 80px
+}
+
+	.request-type-button:hover {
+		color: #fff;
+		background-color: #1bc8e3;
+		border: 1px solid #1bc8e3;
+		height: 100%;
+		padding: 5px;
+		cursor: pointer;
+		width: 80px
+	}
+
+	.request-type-button-active {
+		color: #fff;
+		background-color: #1bc8e3;
+		border: 1px solid #1bc8e3;
+		height: 100%;
+		padding: 5px;
+		cursor: pointer;
+		width: 80px
+	}
+
+	.request-type-button-active:hover {
+		color: #1bc8e3;
+		background-color: transparent;
+		border: 1px solid #1bc8e3;
+		height: 100%;
+		padding: 5px;
+		cursor: pointer;
+		width: 80px
+	}
+
+#result-request-options {
+	display: block;
 	height: 100%;
 	margin: 10px
 }
 
-#response-type {
-	height: 30px;
-	margin: 0px 0px 10px 0px
-}
-
-.response-type-button {
-	color: #1bc8e3;
-	background-color: transparent;
-	border: 1px solid #1bc8e3;
-	height: 100%;
-	padding: 5px;
-	cursor: pointer;
-	width: 80px
-}
-
-.response-type-button:hover {
-	color: #fff;
-	background-color: #1bc8e3;
-	border: 1px solid #1bc8e3;
-	height: 100%;
-	padding: 5px;
-	cursor: pointer;
-	width: 80px
-}
-
-.response-type-button-active {
-	color: #fff;
-	background-color: #1bc8e3;
-	border: 1px solid #1bc8e3;
-	height: 100%;
-	padding: 5px;
-	cursor: pointer;
-	width: 80px
-}
-
-.response-type-button-active:hover {
-	color: #1bc8e3;
-	background-color: transparent;
-	border: 1px solid #1bc8e3;
-	height: 100%;
-	padding: 5px;
-	cursor: pointer;
-	width: 80px
-}
-
 #body-area {
+	display: flex;
 	width: 100%;
 	height: 100%;
 	background-color: #161321;

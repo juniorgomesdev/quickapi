@@ -1,5 +1,4 @@
-
-export default class Api {
+class Api {
 	async sendRequestJSON(data) {
 		let headers = new Headers()
 
@@ -8,24 +7,43 @@ export default class Api {
 			headers,
 			mode: 'cors',
 			cache: 'default',
-			body: data.body
+		}
+
+		if(req.method != 'GET' ) {
+			req.body = data.body
 		}
 
 		try {
-			let promise = await fetch(data.url, data)
-
-			if(promise.ok) {
-				let res = await promise.text()
-
-				return { res, status: promise.status }
-			} else {
-				let res = 'Erro '+promise.statusText
-
-				return { res, status: promise.status }
+			let request = await fetch(data.url, req)
+			let response = await request.text()
+			
+			return {
+				res: response,
+				statusCode: request.status
 			}
 
 		} catch(err) {
-			return err
+			if(err.message = 'TypeError: Failed to fetch') {
+				return {
+					res: 'not found',
+					statusCode: 404
+				}
+			}
+
+			return {
+				res: err,
+				statusCode: request.status
+			}
 		}
 	}
 }
+
+const api = new Api()
+ 
+const call = async (func, data) => {
+	const response = await api['sendRequestJSON'](data)
+
+	return response
+}
+
+export default call

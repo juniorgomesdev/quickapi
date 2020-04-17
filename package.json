@@ -1,7 +1,7 @@
 {
   "name": "quickapi-server",
   "description": "quick test rest API right in the browser",
-  "version": "0.9.2",
+  "version": "0.94.0",
   "main": "server.js",
   "license": "MIT",
   "homepage": "https://github.com/juniorgomesdev/quickapi",
@@ -9,7 +9,7 @@
     "express": "^4.17.1"
   },
   "scripts": {
-    "dev": "nodemon app.js",
+    "dev": "nodemon dev.js",
     "start": "node server.js"
   },
   "repository": {
